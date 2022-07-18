@@ -164,7 +164,7 @@ p {
   line-height: 1.5em;
   padding-bottom: 30px;
   width: 100%;
-  color: dimgray;
+  color: darkgrey;
 }
 
 .interest, .phone, .email {
@@ -172,7 +172,7 @@ p {
   flex-wrap: wrap;
   text-align: center;
   line-height: 1.5em;
-  color: darkgray;
+  color: darkgrey;
   font-size: 1.5rem;
   background-color: #fafafa;
   font-size: 16px;
@@ -218,6 +218,7 @@ h4 {
     flex-wrap: wrap;
     flex-direction: row-reverse;
     background-color: #fafafa;
+    padding: 0 10px 50px;
   }
 
   .top-nav {
@@ -243,6 +244,28 @@ h4 {
     flex-wrap: wrap;
     background-color: #fff;
   }
+
+  .col.about, .col.image {
+    flex-basis: calc(38% - 20px); 
+  }
+
+  .col.about {
+    padding: 5px 0 0 0;
+    text-align: start;
+  }
+  
+  .left {
+    text-align: left;
+    font-size: 20px;
+  }
+  .about {
+    flex-grow: 2;
+  }
+
+  .image {
+    padding: 5px 0 0 0;
+  }
+
   .col {
     flex-basis: calc(50% - 20px);
   }
@@ -255,21 +278,48 @@ h4 {
     display: inline-block;
     margin-left: 20px;
   }
+
+  .interest, .email, .phone {
+    font-size: 20px;
+  }
+
+  b {
+    color: dimgray;
+  }
 }
 
 @media (min-width: 1024px) {
+ 
+  body {
+    padding: 0 50px;
+    background-color: #fafafa;
+  }
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
+
   .top-nav, .top-nav li {
     width: initial;
     margin-bottom: 0;
+    text-align: right;
+  }
+  h1 {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .name, .top-nav li {
+    flex-basis: calc(33.333% - 20px);
+    width: auto;
   }
 
   .col {
     flex-basis: calc(33.333% - 20px);
+  }
+
+  footer {
+    padding: 0;
   }
 }
 
