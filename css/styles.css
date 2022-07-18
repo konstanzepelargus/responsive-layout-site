@@ -118,7 +118,9 @@ h1 a, .portfolio a, .top-nav a {
 }
 
 .container {
-  max-width: 1100px;
+  display: flex;
+  max-width: 10000px;
+  text-align: center;
   padding: 0 10px 10px 10px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -126,10 +128,10 @@ h1 a, .portfolio a, .top-nav a {
 
 .col {
   margin: 10px;
-  min-height 250px;
+  min-height: auto;
   color: white;
   text-align: center;
-  letter spacing: 1px;
+  letter-spacing: 1px;
   padding-top: 5px;
 }
 
@@ -142,10 +144,6 @@ h1 a, .portfolio a, .top-nav a {
   height: auto;
   padding-top: 0;
   margin-top: 0;
-}
-
-.box-6 {
-  padding-bottom: 30px;
 }
 
 img {
@@ -291,27 +289,21 @@ h4 {
 @media (min-width: 1024px) {
  
   body {
-    padding: 0 50px;
+    padding: 0 30px;
     background-color: #fafafa;
   }
+ 
   nav {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
+    padding: 0;
+    height: 100px;
+    background-color: #fafafa;
   }
 
-  .top-nav, .top-nav li {
-    width: initial;
-    margin-bottom: 0;
-    text-align: right;
-  }
-  h1 {
-    text-align: left;
-    margin-bottom: 0;
-  }
-
-  .name, .top-nav li {
-    flex-basis: calc(33.333% - 20px);
-    width: auto;
+  .col.name {
+    color: black;
   }
 
   .col {
