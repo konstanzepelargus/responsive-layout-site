@@ -27,7 +27,7 @@ main {
   padding-left: 0;
  }
 
- a {
+ a, h1 {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -118,9 +118,7 @@ h1 a, .portfolio a, .top-nav a {
 }
 
 .container {
-  display: flex;
-  max-width: 10000px;
-  text-align: center;
+  max-width: 1100px;
   padding: 0 10px 10px 10px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
@@ -129,10 +127,13 @@ h1 a, .portfolio a, .top-nav a {
 .col {
   margin: 10px;
   min-height: auto;
-  color: white;
+  color: black;
   text-align: center;
-  letter-spacing: 1px;
   padding-top: 5px;
+}
+
+.col p {
+  letter-spacing: 1px;
 }
 
 .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
@@ -149,6 +150,7 @@ h1 a, .portfolio a, .top-nav a {
 img {
   width: 100%;
   max-width: 768px;
+  object-fit: cover;
 }
 
 h3 {
@@ -300,10 +302,6 @@ h4 {
     padding: 0;
     height: 100px;
     background-color: #fafafa;
-  }
-
-  .col.name {
-    color: black;
   }
 
   .col {
