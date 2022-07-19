@@ -30,9 +30,9 @@ a {
     ),
     linear-gradient(
       to right,
-      rgba(255, 0, 0, .8),
-      rgba(255, 0, 180, .8),
-      rgba(0, 100, 200, .8)
+      rgba(255, 0, 180, 0.8),
+      rgba(0, 106, 255, 0.8),
+      rgba(246, 250, 4, 0.8)
   );
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
@@ -316,6 +316,7 @@ h4 {
 
   .image {
     padding: 5px 0 0 0;
+
   }
 
   .col {
