@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lora:ital@0;1&family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Responsive Layout Site</title>
 </head>
@@ -17,13 +17,14 @@
           <li class="col home"><a href="#">Home</a></li>
           <li class="col portfolio"><a href="#portfolio">Portfolio</a></li>
           <li class="col contact"><a href="#contact">Contact</a></li>
+          <li class="col skills-nav"><a href="#skills">Skills</a></li>
         </ul>
     </nav>
   </header>
   <main>
     <div class="cont">
       <div class="col image">
-        <img src="images/responsive-layout-profile.png" title="Student" alt="Image of student">
+        <img src="images/me.jpg" title="Student" alt="Image of student">
       </div>  
       <div class="col about">
         <p class="left">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
@@ -31,7 +32,7 @@
     </div>
     
     <section>
-          <h4 id="portfolio"><a href="#top">Portfolio</a></h4>
+          <h2 id="portfolio"><a href="#top">Portfolio</a></h2>
     </section>
 
     <div class="container">
@@ -50,19 +51,16 @@
       <h3><a href="#">Travel App</a></h3>
       <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
     </div>
-
     <div class="col box-4">
       <img src="images/portfolio-4.png" title="Map of Favorite Spots" alt="Image of Map of Favorite Spots placeholder">
       <h3><a href="#">Map of Favorite Spots</a></h3>
       <p>This project uses mapping apis to plot points of my favorite spots in the city for a do-it-yourself walking tour.</p>
     </div>
-
     <div class="col box-5">
       <img src="images/portfolio-5.png" title="Photo Gallery" alt="Image of Photo Gallery placeholder">
       <h3><a href="#">Photo Gallery</a></h3>
       <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through the photos.</p>
     </div>
-
     <div class="col box-6">
       <img src="images/portfolio-6.png" title="Calculator" alt="Image of Calculator placeholder">
       <h3><a href="#">Calculator</a></h3>
@@ -71,7 +69,26 @@
   </div>
 
   <section>
-    <h4 ID="contact"><a href="#top">Contact</a></h4>
+    <h2 id="skills"><a href="#skills">Skills</a></h2>
+  </section>
+   
+  <div class="skills">
+    <div class="col communication">
+      <p>Communication</p>
+    </div>
+    <div class="col creativity">
+      <p>Creativity</p>
+    </div>
+    <div class="col empathy">
+      <p>Empathy</p>
+    </div>
+    <div class="col problem-solving">
+      <p>Problem Solving</p>
+    </div>
+  </div>
+
+  <section>
+    <h2 ID="contact"><a href="#top">Contact</a></h2>
     <p class="interest">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
     <p class="phone">Phone &nbsp; <b>+1 (111) 555-1234</b></p>
     <p class="email">Email &nbsp; <b>email@yoursite.com</b></p>
@@ -79,13 +96,13 @@
  
 </main>
   <footer>
-    <h4>Konstanze Pelargus</h4>
-    <ul class="footer-nav">
-      <li class="top"><a href="#top">back to top</a></li>
-      <li class="full"><a href="#top">home</a></li>
-      <li class="full"><a href="#portfolio">portfolio</a></li>
-      <li class="full"><a href="#contact">contact</a></li>
-    </ul>
+      <h4>Konstanze Pelargus</h4>
+      <ul class="footer-nav">
+        <li class="top"><a href="#top">back to top</a></li>
+        <li class="full"><a href="#top">home</a></li>
+        <li class="full"><a href="#portfolio">portfolio</a></li>
+        <li class="full"><a href="#contact">contact</a></li>
+      </ul>
   </footer>
 </body>
 </html>
